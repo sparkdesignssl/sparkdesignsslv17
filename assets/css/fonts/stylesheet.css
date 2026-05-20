@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Melete';
+    src: url('Melete-Medium.eot');
+    src: url('Melete-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Melete-Medium.woff2') format('woff2'),
+        url('Melete-Medium.woff') format('woff'),
+        url('Melete-Medium.svg#Melete-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Melete';
+    src: url('Melete-Regular.eot');
+    src: url('Melete-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Melete-Regular.woff2') format('woff2'),
+        url('Melete-Regular.woff') format('woff'),
+        url('Melete-Regular.svg#Melete-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Melete';
+    src: url('Melete-Bold.eot');
+    src: url('Melete-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Melete-Bold.woff2') format('woff2'),
+        url('Melete-Bold.woff') format('woff'),
+        url('Melete-Bold.svg#Melete-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Melete';
+    src: url('Melete-Light.eot');
+    src: url('Melete-Light.eot?#iefix') format('embedded-opentype'),
+        url('Melete-Light.woff2') format('woff2'),
+        url('Melete-Light.woff') format('woff'),
+        url('Melete-Light.svg#Melete-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
