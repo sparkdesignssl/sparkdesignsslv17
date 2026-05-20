@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── PRIMARY SEO ── -->
+  <title>Spark Designs | Logo Design, Social Media & Campaign Visuals</title>
+  <meta name="description" content="Spark Designs is a creative studio specialising in logo design, social media content, and campaign visuals. Bold ideas made visual — built to stand out.">
+  <meta name="keywords" content="logo design, social media content, campaign visuals, brand identity, graphic design, creative studio, Spark Designs, poster design, visual branding">
+  <meta name="author" content="Spark Designs">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://sparkdesigns.co/">
+
+  <!-- ── OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://sparkdesigns.co/">
+  <meta property="og:site_name"   content="Spark Designs">
+  <meta property="og:title"       content="Spark Designs | Logo Design, Social Media & Campaign Visuals">
+  <meta property="og:description" content="Bold ideas made visual. Spark Designs crafts logos, social content, and campaign visuals that leave a lasting impression.">
+  <meta property="og:image"       content="https://sparkdesigns.co/assets/img/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"    content="Spark Designs — Ideas Made Visual">
+  <meta property="og:locale"      content="en_US">
+
+  <!-- ── TWITTER / X CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@sparkdesigns">
+  <meta name="twitter:creator"     content="@sparkdesigns">
+  <meta name="twitter:title"       content="Spark Designs | Logo Design, Social Media & Campaign Visuals">
+  <meta name="twitter:description" content="Bold ideas made visual. Logos, social content, and campaign visuals built to stand out.">
+  <meta name="twitter:image"       content="https://sparkdesigns.co/assets/img/og-image.jpg">
+  <meta name="twitter:image:alt"   content="Spark Designs — Ideas Made Visual">
+
+  <!-- ── THEME & PWA ── -->
+  <meta name="theme-color" content="#C70000">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Spark Designs">
+
+  <!-- ── FAVICONS ── -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+  <!-- ── STRUCTURED DATA (Schema.org) ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Spark Designs",
+    "url": "https://sparkdesigns.co/",
+    "logo": "https://sparkdesigns.co/assets/img/logo.png",
+    "image": "https://sparkdesigns.co/assets/img/og-image.jpg",
+    "description": "Spark Designs is a creative studio specialising in logo design, social media content, and campaign visuals.",
+    "slogan": "Ideas Made Visual",
+    "priceRange": "$$",
+    "serviceArea": { "@type": "Place", "name": "Worldwide" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Design Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Logo Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Content" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Campaign Visuals" } }
+      ]
+    },
+    "sameAs": [
+      "https://www.instagram.com/sparkdesigns",
+      "https://www.twitter.com/sparkdesigns"
+    ]
+  }
+  </script>
+
+  <!-- ── PERFORMANCE ── -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" href="assets/css/spark.css" as="style">
+
+  <link rel="stylesheet" href="assets/css/spark.css">
+</head>
+<body>
+
+<!-- Background layers -->
+<canvas id="lavaCanvas" class="lava-bg"></canvas>
+<div class="background-glows" aria-hidden="true">
+  <span class="glow-blob glow-blob-one"></span>
+  <span class="glow-blob glow-blob-two"></span>
+  <span class="glow-blob glow-blob-three"></span>
+  <span class="glow-blob glow-blob-four"></span>
+</div>
+<canvas id="lightningCanvas"></canvas>
+<div class="grain"></div>
+
+<!-- Cursor (desktop only) -->
+<canvas id="trailCanvas"></canvas>
+<div class="cursor-outer" id="cursorOuter"></div>
+<div class="cursor-inner" id="cursorInner"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Spark" class="loader-logo-img">
+      <span class="loader-text" id="loaderText"></span>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill" id="loaderBarFill"></div></div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav id="navbar" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/img/logo.png" alt="Spark" class="nav-logo-img">
+    <span class="nav-logo-text">SPARK</span>
+  </a>
+</nav>
+
+<!-- Hero -->
+<main>
+<section id="hero" aria-label="Hero">
+  <canvas id="threeCanvas"></canvas>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="title-mask"><span class="title-line glitch-text" data-text="IDEAS">IDEAS</span></span>
+      <span class="title-mask"><span class="title-line title-red" data-text="MADE VISUAL">MADE VISUAL</span></span>
+    </h1>
+    <div class="hero-btns">
+      <a href="#work" class="btn-primary neon-btn magnetic">WORK <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="btn-secondary magnetic">CONTACT</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" aria-label="Services">
+  <div class="services-inner">
+    <div class="section-label">
+      <div class="section-label-line"></div>
+      <span class="section-title-glow" data-text="SERVICES">SERVICES</span>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/>
+        </svg>
+        <h3 class="service-title">LOGO DESIGN</h3>
+        <p class="service-desc">We craft logos that carry weight — designed for long-term brand recognition, not just aesthetics. Every mark is built to scale across every touchpoint, from social to signage, and leave a lasting first impression.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+        </svg>
+        <h3 class="service-title">SOCIAL MEDIA CONTENT</h3>
+        <p class="service-desc">Consistent, on-brand posts designed to perform — feed graphics, stories, reels covers, and carousels that maintain a visual identity your audience recognises instantly and keeps coming back to.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
+        </svg>
+        <h3 class="service-title">CAMPAIGN VISUALS</h3>
+        <p class="service-desc">From product launches to promotions, we design full visual suites — posters, banners, digital ads, and mockups — built around a single campaign direction that hits hard across every platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work -->
+<section id="work" aria-label="Portfolio">
+  <div class="work-header reveal">
+    <div class="section-label">
+      <div class="section-label-line"></div>
+      <span class="section-title-glow" data-text="WORK">WORK</span>
+    </div>
+    <div class="work-filters">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="logos">LOGOS</button>
+      <button class="filter-btn" data-filter="posts">POSTS</button>
+    </div>
+  </div>
+  <div class="album-grid" id="workGrid">
+    <button class="album-card tilt-card reveal" type="button" data-category="logos" data-title="LOGOS"
+      data-images="assets/img/logo1.jpg|assets/img/logo2.jpg|assets/img/logo3.jpg|assets/img/logo4.jpg|assets/img/logo5.jpg|assets/img/logo6.jpg|assets/img/logo7.jpg|assets/img/logo8.jpg|assets/img/logo9.jpg|assets/img/logo10.jpg|assets/img/logo11.jpg|assets/img/logo13.jpg|assets/img/logo14.jpg|assets/img/logo15.jpg">
+      <span class="album-cover">
+        <img class="album-photo album-photo-main" src="assets/img/logo1.jpg" alt="Logos" loading="lazy">
+        <img class="album-photo album-photo-back left" src="assets/img/logo2.jpg" alt="" loading="lazy">
+        <img class="album-photo album-photo-back right" src="assets/img/logo3.jpg" alt="" loading="lazy">
+      </span>
+      <span class="album-meta"><strong>LOGOS</strong></span>
+    </button>
+    <button class="album-card tilt-card reveal reveal-delay-1" type="button" data-category="posts" data-title="CONCEPTS"
+      data-images="assets/img/album1-1.jpg|assets/img/album1-2.jpg|assets/img/album1-3.jpg|assets/img/album1-4.jpg|assets/img/album1-5.jpg">
+      <span class="album-cover">
+        <img class="album-photo album-photo-main" src="assets/img/album1-1.jpg" alt="Concepts" loading="lazy">
+        <img class="album-photo album-photo-back left" src="assets/img/album1-2.jpg" alt="" loading="lazy">
+        <img class="album-photo album-photo-back right" src="assets/img/album1-3.jpg" alt="" loading="lazy">
+      </span>
+      <span class="album-meta"><strong>CONCEPTS</strong></span>
+    </button>
+    <button class="album-card tilt-card reveal reveal-delay-2" type="button" data-category="posts" data-title="CAMPAIGNS"
+      data-images="assets/img/album2-1.jpg|assets/img/album2-2.jpg|assets/img/album2-3.jpg|assets/img/album2-4.jpg|assets/img/album2-5.jpg|assets/img/album2-6.jpg|assets/img/album2-7.jpg|assets/img/album2-8.jpeg|assets/img/album3-1.jpg|assets/img/album3-2.jpg|assets/img/album3-3.jpg|assets/img/album3-4.jpg">
+      <span class="album-cover">
+        <img class="album-photo album-photo-main" src="assets/img/album2-1.jpg" alt="Campaigns" loading="lazy">
+        <img class="album-photo album-photo-back left" src="assets/img/album2-2.jpg" alt="" loading="lazy">
+        <img class="album-photo album-photo-back right" src="assets/img/album2-3.jpg" alt="" loading="lazy">
+      </span>
+      <span class="album-meta"><strong>CAMPAIGNS</strong></span>
+    </button>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&#10005;</button>
+  <div class="album-viewer-inner">
+    <div class="album-viewer-head">
+      <span id="albumCount"></span>
+      <h3 id="albumTitle"></h3>
+    </div>
+    <div class="album-stage" id="albumStage">
+      <div class="wheel-slot wheel-far-prev"><img src="" alt=""></div>
+      <div class="wheel-slot wheel-prev"><img src="" alt=""></div>
+      <div class="wheel-slot wheel-current"><img src="" alt="" id="lightboxImg"></div>
+      <div class="wheel-slot wheel-next"><img src="" alt=""></div>
+      <div class="wheel-slot wheel-far-next"><img src="" alt=""></div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<section id="contact" aria-label="Contact">
+  <div class="contact-label-wrap">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-title-glow" data-text="CONTACT">CONTACT</span>
+    </div>
+  </div>
+  <div class="contact-inner">
+    <div class="reveal reveal-delay-1">
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f8bff534-c493-4a29-98bc-3aa4e6802fac">
+        <input type="hidden" name="subject" value="New Project Inquiry — Spark Designs">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <div class="form-row">
+          <div class="form-group"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
+        </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select name="service">
+            <option value="">Select...</option>
+            <option>Logo Design</option>
+            <option>Social Media Content</option>
+            <option>Campaign Visuals</option>
+            <option>Multiple Services</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Your Vision</label><textarea name="message" placeholder="Tell us about your project..." required></textarea></div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary neon-btn magnetic">IGNITE <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <p>MESSAGE SENT.</p>
+        <span>We'll be in touch soon.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <address class="footer-copy">© 2026 <a href="https://sparkdesigns.co" style="color:inherit;text-decoration:none">Spark Designs</a> — All rights reserved.</address>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/spark.js"></script>
+</body>
+</html>
